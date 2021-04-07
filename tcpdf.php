@@ -18919,10 +18919,10 @@ Putting 1 is equivalent to putting 0 and calling Ln() just after. Default value:
 
 				$lineStyle = array(
 					'color' => $tag['fgcolor'],
-					'cap'   => $tag['style']['cap'],
-					'join'  => $tag['style']['join'],
-					'dash'  => $tag['style']['dash'],
-					'phase' => $tag['style']['phase'],
+					'cap'   => $tag['style']['cap'] ?? null,
+					'join'  => $tag['style']['join'] ?? null,
+					'dash'  => $tag['style']['dash'] ?? null,
+					'phase' => $tag['style']['phase'] ?? null,
 				);
 
 				$lineStyle = array_filter($lineStyle);
